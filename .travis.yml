@@ -1,6 +1,10 @@
 language: python
 python:
   - "3.5"
-script: make test
+install:
+  - pip install -e . --use-mirrors
+script:
+  - make test
+  - py.test rpn.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
 after_success:
   - coveralls
