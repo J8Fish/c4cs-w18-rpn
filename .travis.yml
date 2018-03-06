@@ -10,4 +10,4 @@ script:
   - py.test test_rpn.py --doctest-modules -v --cov rpn.py --cov-report term-missing
   #- coverage run --source=. -m unittest
 after_success:
-  - coveralls
+  - coveralls -d rpn.py
