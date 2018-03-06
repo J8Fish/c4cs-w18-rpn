@@ -5,6 +5,6 @@ install:
   - pip install pytest-cov
 script:
   - make test
-  - py.test rpn.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
+  - py.test rpn.py --doctest-modules -v --cov coveralls --cov-report term-missing
 after_success:
   - coveralls
