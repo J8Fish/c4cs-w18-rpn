@@ -9,7 +9,7 @@ before_script:
   - git clone https://github.com/J8Fish/c4cs-w18-rpn.git
   - cd c4cs-w18-rpn
 script:
-  #- make test
+  - make test
   #- py.test --doctest-modules -v --cov coveralls --cov-report term-missing
   #- py.test test_rpn.py --doctest-modules -v --cov rpn.py --cov-report term-missing
   - coverage run --source=. test_rpn.py
