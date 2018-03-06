@@ -1,5 +1,6 @@
 import unittest
 import pytest
+import coveralls
 
 import rpn
 
