@@ -17,3 +17,11 @@ class TestBasics(unittest.TestCase):
     def test_exp(self):
         result = rpn.calculate("2 2 ^")
         self.assertEqual(4, result)
+
+if __name__ == "__main__":
+    a = TestBasics()
+    a.test_add()
+    a.test_subtract()
+    a.test_multiply()
+    a.test_divide()
+    a.test_exp()

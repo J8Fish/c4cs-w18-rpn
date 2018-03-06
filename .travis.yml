@@ -12,7 +12,7 @@ script:
   #- make test
   #- py.test --doctest-modules -v --cov coveralls --cov-report term-missing
   #- py.test test_rpn.py --doctest-modules -v --cov rpn.py --cov-report term-missing
-  - coverage run --source=. -m unittest
-  # - coverage report -m
+  - coverage run --source=. test_rpn.py
+  - coverage report -m
 after_success:
   - coveralls
