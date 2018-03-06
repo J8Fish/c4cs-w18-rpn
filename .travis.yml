@@ -7,7 +7,7 @@ install:
 script:
   #- make test
   #- py.test --doctest-modules -v --cov coveralls --cov-report term-missing
-  - py.test test_rpn.py --doctest-modules --pep8 rpn.py -v --cov coveralls --cov-report term-missing
+  - py.test test_rpn.py --doctest-modules -v --cov rpn.py --cov-report term-missing
   #- coverage run --source=. -m unittest
 after_success:
   - coveralls
