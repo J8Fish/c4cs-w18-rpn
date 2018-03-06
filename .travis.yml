@@ -4,7 +4,9 @@ python:
 install:
   - pip install pytest pytest-cov
   - pip install coveralls
-  - pip install -e . --use-mirrors
+before_script:
+  - git clone git@github.com:J8Fish/c4cs-w18-rpn.git
+  - cd c4cs-w18-rpn
 script:
   #- make test
   #- py.test --doctest-modules -v --cov coveralls --cov-report term-missing
