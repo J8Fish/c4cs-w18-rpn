@@ -1,7 +1,3 @@
-import unittest
-import pytest
-import coveralls
-
 import rpn
 
 class TestBasics(unittest.TestCase):
