@@ -2,8 +2,9 @@ language: python
 python:
   - "3.5"
 install:
-  - pip install pytest pytest-cov pytest-pep8
+  - pip install pytest pytest-cov
   - pip install coveralls
+  - pip install -e . --use-mirrors
 script:
   #- make test
   #- py.test --doctest-modules -v --cov coveralls --cov-report term-missing
