@@ -19,9 +19,10 @@ class TestBasics(unittest.TestCase):
         self.assertEqual(4, result)
 
 if __name__ == "__main__":
-    a = TestBasics()
+    unittest.main()
+    '''a = TestBasics()
     a.test_add()
     a.test_subtract()
     a.test_multiply()
     a.test_divide()
-    a.test_exp()
+    a.test_exp()'''
